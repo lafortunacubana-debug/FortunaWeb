@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Fortuna Cubana - Resultados de la Bolita y Charada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('portada.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .hover-scale { transition: transform 0.3s ease; }
+        .hover-scale:hover { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-8 py-4 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+        <div class="flex items-center gap-3">
+            <img src="logo1.png" alt="Logo La Fortuna Cubana" class="w-10 h-10 rounded-full">
+            <span class="text-xl font-bold tracking-wider">LA FORTUNA CUBANA</span>
+        </div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a href="#inicio" class="hover:text-rose-500 transition">Inicio</a>
+            <a href="#funciones" class="hover:text-rose-500 transition">Funciones</a>
+            <a href="#comunidad" class="hover:text-rose-500 transition">Comunidad</a>
+            <a href="https://app.lafortunacubana.com" target="_blank" rel="noopener" class="bg-rose-600 hover:bg-rose-700 px-5 py-2 rounded-lg font-semibold transition">Acceder Web</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section con Padding Ajustado -->
+    <header id="inicio" class="hero-bg min-h-screen flex items-center justify-center text-center px-4 pt-8">
+        <div class="max-w-4xl">
+            
+            <h2 class="text-4xl font-bold mb-4">La Suerte está en tus Manos</h2>
+            <p class="text-lg md:text-2xl text-slate-300 mb-10">Resultados de la Bolita Cubana en tiempo real, Charada, Predicciones y Apuestas seguras.</p>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="https://app.lafortunacubana.com" target="_blank" rel="noopener" class="text-lg bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition flex items-center justify-center gap-2">
+                    <i class="fas fa-globe"></i> Versión Web
+                </a>
+                <a href="lafortunacubana.apk" 
+					download="LaFortunaCubana.apk" 
+					class="text-lg bg-rose-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-rose-700 transition flex items-center justify-center gap-2">
+					<i class="fas fa-download"></i> Descargar APK
+				</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Funciones -->
+    <section id="funciones" class="py-24 px-8 bg-slate-800">
+        <div class="max-w-6xl mx-auto text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Todo lo que ofrece la App</h2>
+            <p class="text-slate-400">La herramienta definitiva para los seguidores de la Bolita.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-700 hover-scale shadow-lg">
+                <img src="1.jpg" alt="Resultados" class="rounded-xl mb-4">
+                <h3 class="text-xl font-bold mb-2 text-rose-500">Resultados Hoy</h3>
+                <p class="text-slate-400 text-sm">Fijo, Corrido y Parle actualizados al minuto.</p>
+            </div>
+            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-700 hover-scale shadow-lg">
+                <img src="2.jpg" alt="Predicciones" class="rounded-xl mb-4">
+                <h3 class="text-xl font-bold mb-2 text-rose-500">Predicciones</h3>
+                <p class="text-slate-400 text-sm">Cálculos basados en tendencias para la próxima tirada.</p>
+            </div>
+            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-700 hover-scale shadow-lg">
+                <img src="3.jpg" alt="Charada" class="rounded-xl mb-4">
+                <h3 class="text-xl font-bold mb-2 text-rose-500">La Charada</h3>
+                <p class="text-slate-400 text-sm">Consulta el significado de cada número rápidamente.</p>
+            </div>
+            <div class="bg-slate-900 p-4 rounded-2xl border border-slate-700 hover-scale shadow-lg">
+                <img src="5.jpg" alt="Apuestas" class="rounded-xl mb-4">
+                <h3 class="text-xl font-bold mb-2 text-rose-500">Haz tu Apuesta</h3>
+                <p class="text-slate-400 text-sm">Juega Fijo, Corrido, Candado y Centena desde la app.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gestión de Usuario -->
+    <section class="py-24 px-8 bg-slate-900">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 order-2 md:order-1 grid grid-cols-2 gap-4">
+                <img src="4.jpg" alt="Perfil" class="rounded-2xl shadow-2xl hover-scale">
+                <img src="6.jpg" alt="Apuesta" class="rounded-2xl shadow-2xl mt-8 hover-scale">
+            </div>
+            <div class="flex-1 order-1 md:order-2">
+                <h2 class="text-4xl font-bold mb-6">Control Total de tu Suerte</h2>
+                <p class="text-slate-400 mb-8 text-lg">Gestiona tus movimientos, compra monedas y revisa tus jugadas con total seguridad.</p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 bg-slate-800 p-4 rounded-xl">
+                        <i class="fas fa-coins text-rose-500 text-2xl"></i>
+                        <span>Billetera digital para compra de monedas fácil.</span>
+                    </div>
+                    <div class="flex items-center gap-4 bg-slate-800 p-4 rounded-xl">
+                        <i class="fas fa-list-ul text-rose-500 text-2xl"></i>
+                        <span>Historial completo de tus últimas apuestas.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comunidad y Redes -->
+    <section id="comunidad" class="py-24 px-8 bg-rose-600">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Nuestros Canales Oficiales</h2>
+            <p class="text-rose-100 mb-10 text-xl">Únete para recibir predicciones y alertas de resultados.</p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                <a href="https://facebook.com/share/18gD765EXd/" target="_blank" rel="noopener" class="bg-white text-rose-600 px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-slate-100 transition shadow-xl">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://t.me/lafortunacubanacanal" target="_blank" rel="noopener" class="bg-slate-900 text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-slate-800 transition shadow-xl">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+                <a href="https://whatsapp.com/channel/0029Vb6kFIKFCCoYkI0N3c2W" target="_blank" rel="noopener" class="bg-[#25D366] text-white px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:opacity-90 transition shadow-xl">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-8 bg-slate-950 text-center text-slate-500">
+        <img src="logo1.png" alt="Logo Footer" class="w-16 h-16 rounded-full mx-auto mb-6 opacity-40">
+        <p>&copy; 2026 La Fortuna Cubana. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
